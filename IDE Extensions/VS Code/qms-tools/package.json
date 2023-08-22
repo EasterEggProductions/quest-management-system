@@ -1,0 +1,37 @@
+{
+  "name": "qms-tools",
+  "displayName": "Quest Format Tools",
+  "description": "Tools for the .quest format of game quests",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.81.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ], 
+  "contributes": {
+    "languages": [{
+      "id": "quest",
+      "aliases": ["Quest", "quest"],
+      "extensions": [".quest"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "quest",
+      "scopeName": "text.quest",
+      "path": "./syntaxes/quest.tmLanguage.json"
+    }],
+    "colors": [
+      {
+        "id": "keyword.quest.kill",
+        "description": "Color kill quest keyword.",
+        "defaults": {
+          "dark": "#FF0000",
+          "light": "errorForeground",
+          "highContrast": "#010203",
+          "highContrastLight": "#feedc3"
+        }
+      }
+    ]
+  }
+}

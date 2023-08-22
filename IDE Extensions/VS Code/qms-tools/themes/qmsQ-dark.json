@@ -1,0 +1,16 @@
+{
+	"name": "Quest Theme",
+	"tokenColors": [
+		{
+			"name": "Comment",
+			"scope": [
+				"comment",
+				"punctuation.definition.comment"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#FF0000"
+			}
+		}
+	]
+}

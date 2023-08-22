@@ -1,0 +1,22 @@
+# Definition for .quest text file format. Hash comments to be supported
+# Brackets are not supported, [Square brackets here are holding details about each key]
+
+QUEST: [Unique quest name. Definitions will be overridern in load order]
+ checkout: [Where the quest was taken from]
+ turn_in: [I feel like out and in should be here for other reasons. also, AUTO for auto turn in]
+ ObjectiveGroup: [main or other name. Main has special properties like completion]
+  threshold: [number of objectives in this group to count as 'done', if absent default to all]
+  hidden: [boolean for hidden objectives and rewards, if absent default false]
+  objectives:
+   [Line by line list of objectives]
+   [ACTIONKEY in all caps, follwed by space seperated keys or data] "Maybe somehow a string?"
+   GOTO pirate hideout mcJoeStabbyBoys
+   kill 5 pirate mcJoeStabbyBoys
+  rewards:
+   [Line by line list of rewards]
+   [These are highly varied, each one would need to be implimented to your game]
+   item_gold 10
+   token thisQuestComplete 
+  extra: [Extra data somehow? Json? YAML? YAMS? Not xml, xml is the devil. I guess just a string. But how do I make a string that disallows XML?]
+
+QUEST: Further quests defined in one file...

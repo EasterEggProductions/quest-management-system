@@ -1,0 +1,63 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Quest",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+			{
+				"name": "keyword.quest.header",
+				"match": "\\b(Quest|QUEST)\\b"
+			},
+			{
+				"name": "keyword.control.quest",
+				"match": "\\b(QUEST|objective|rewards|visible|threshold|objectives|Objective Group|checkout|turn_in)\\b"
+			},
+			{
+				"name": "keyword.quest.kill",
+				"match": "\\b(KILL)\\b"
+			}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.quest",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.quest",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment",
+			"begin": "#",
+			"end": "\n",
+			"tokenColors": [
+				{
+					"name": "Comment",
+					"scope": [
+						"comment",
+						"punctuation.definition.comment"
+					],
+					"settings": {
+						"fontStyle": "italic",
+						"foreground": "#FF0000"
+					}
+				}
+			]
+		}
+	},
+	"scopeName": "text.quest"
+}
