@@ -1,0 +1,35 @@
+QUEST: Quest Tough
+ checkout:Pimpble the Bimbler
+ turn_in:Joe the Barber
+ ObjectiveGroup: main
+  threshold: 2
+  hidden: false
+  objectives:
+   SPECIAL ballMovedNorthABit
+   GOTO pirate hideout mcJoeStabbyBoys 
+   KILL 5 pirates
+  rewards:
+   item_gold 10
+   item_pew
+   item_XP 5
+   token thisQuestComplete
+   factionRep KansasCityFuckbois 10
+ ObjectiveGroup: bonus
+  threshold: 1
+  hidden: false
+  objectives:
+   KILL 6 pirates
+   no casualties
+   no damage
+  rewards: #a comment
+   item_gold 50 "A string"
+   item_XP 15
+ ObjectiveGroup: secret
+  threshold:0
+  hidden: true
+  objectives:
+   GET kids sweetroll
+   TIMER 5 min
+  rewards:
+   item_skillPoint 1
+   token thisQuestBonus 

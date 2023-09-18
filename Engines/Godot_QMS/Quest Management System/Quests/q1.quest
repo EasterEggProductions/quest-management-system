@@ -1,0 +1,10 @@
+QUEST: Quest Simple
+ checkout:Pimpble the Bimbler
+ turn_in:Joe the Barber
+ ObjectiveGroup: main
+  objectives:
+   GOTO pirate hideout mcJoeStabbyBoys
+   KILL 5 pirate
+  rewards:
+   item_gold 10
+   token thisQuestComplete #Do automatically?

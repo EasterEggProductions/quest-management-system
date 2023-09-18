@@ -1,7 +1,7 @@
 # Specifications for quest management system format
 
 # Goal
-A format that defines all the relevant details for the basics of quests for games in a way that can be understoon by non programming developers. 
+A format that defines all the relevant details for the basics of quests for games in a way that can be understood by non programming developers. 
 
 
 in a way that can be extended in a basic text editor, or embellished upon with hilighting. 
